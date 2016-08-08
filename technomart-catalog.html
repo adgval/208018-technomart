@@ -14,14 +14,14 @@
                     <label>Поиск:<input type="text" name="search-line" value=""></label>
             </div>
             <div class="right">
-                    <a class="bookmark" href="#">Закладки</a>
-                    <a class="basket" href="#">Корзина</a>
-                    <a class="order-place" href="#">Оформить заказ</a>
+                <a class="bookmark" href="#">Закладки</a>
+                <a class="basket" href="#">Корзина</a>
+                <a class="order-place" href="#">Оформить заказ</a>
             </div>
         </div>
     </section>
-    <section class="header">
-        <section class="container">
+    <header class="header">
+        <div class="container">
             <p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
             <div class="header-contacts">
                 <a class="phone" href="#">+7(812)555-05-55</a>
@@ -33,114 +33,83 @@
                 <a class="user-account" href="#">Личный кабинет</a>
             </div>
             <nav class="main-navigation">
-        <ul>
-            <li>
-                <a href="#">Главная</a>
-            </li>
-            <li>
-                <a href="#">Компания</a>
-            </li>
-            <li>
-                <a href="#">Каталог</a>
-            </li>
-            <li>
-                <a href="#">Новости</a>
-            </li>
-            <li>
-                <a href="#">Спецпредложения</a>
-            </li>
-            <li>
-                <a href="#">Доставка</a>
-            </li>
-            <li>
-                <a href="#">Контакты</a>
-            </li>
-        </ul>
-    </nav>     
-          </section>
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Компания</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Новости</a></li>
+                    <li><a href="#">Спецпредложения</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </nav>     
+        </div>
         
-    </section>  
+    </header>  
       
     
     <nav class="breadcrumbs container">
         <ul>
-            <li>
-                <img src="http://placehold.it/100x20" width="5" height="5" alt="Главная">
-            </li>
-            <li>
-                <a href="#">Каталог</a>
-            </li>
-            <li>
-                <a href="#">Инструмент</a>
-            </li>
-            <li>
-                <a href="#">Перфораторы</a>
-            </li>
-
+            <li><img src="http://placehold.it/100x20" width="5" height="5" alt="Главная"></li>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Инструмент</a></li>
+            <li><a href="#">Перфораторы</a></li>
         </ul>    
     </nav> 
-    <header class="container">
+    <div class="container">
       <h1>Перфораторы</h1>
-    </header>
+    </div>
     
     <main>
         <div class="container">
           <div class="filter">
-            <h3>Фильтр:</h3>
-            <h2>Цена:</h2>
+            <span>Фильтр:</span>
+            <h4>Цена:</h4>
             <input type="range" min="0" max="30000" step="100">
             <input type="number">-<input type="number">
-            <h2>Производители:</h2>
+            <h4>Производители:</h4>
                 <ul>
-                    <li>
-                        <label><input type="checkbox" name="brands" value="Bosch">Bosch</label>
-                    </li>
-                    <li>
-                        <label><input type="checkbox" name="brands" value="Interskol">Интерскол</label>
-                    </li>
+                    <li><label><input type="checkbox" name="brands" value="Bosch" checked="checked" >Bosch</label></li>
+                    <li><label><input type="checkbox" name="brands" value="Interskol">Интерскол</label></li>
+                    <li><label><input type="checkbox" name="brands" value="Makita" checked="checked">Makita</label></li>
+                    <li><label><input type="checkbox" name="brands" value="Dewalt">Dewalt</label></li>
+                    <li><label><input type="checkbox" name="brands" value="Hitachi">Hitachi</label></li>
                 </ul>
-            <h2>Питание:</h2>
+            <h4>Питание:</h4>
                 <ul>
-                    <li>
-                        <label><input type="radio" name="power-type" value="01">Аккумуляторные</label>
-                    </li>
-                    <li>
-                        <label><input type="radio" name="power-type" value="02">Сетевые</label>
-                    </li>
+                    <li><label><input type="radio" name="power-type" value="01" checked="checked">Аккумуляторные</label></li>
+                    <li><label><input type="radio" name="power-type" value="02">Сетевые</label></li>
                 </ul>
                 <a class="btn" href="#">Показать</a>
             </div>
             <div class="catalog">
                 <div class="sorting">
-                    <h3>Сортировка:</h3>
-                    <ul>
-                        <li>
-                        <a href="#">По цене</a>
-                        </li>
-                        <li>
-                        <a href="#">По типу</a>
-                        </li>
-                        <li>
-                        <a href="#">По функционалу</a>
-                        </li>
-                    </ul>
-                    <span class="up-down">
+                    <span>Сортировка:</span>
+                        <div class="sorting-ways">
+                            <a href="#">По цене</a>
+                            <a href="#">По типу</a>
+                            <a href="#">По функционалу</a>
+                        </div>
+                    <div class="up-down">
                         <a href="#">По возрастанию</a>
                         <a href="#">По убыванию</a>
-                    </span>
+                    </div>
                 </div>   
-                <figure>
-              
+                <div class="items">
                     <article class="item">
                         <div class="item-photo">
                             <img src="http://placehold.it/50x50" width="50" height="50" alt="Перфоратор">
                         </div>
                         <p>Перфоратор</p>
-                        <div class="buy">
+                        <div class="price">
                             <div class="old-price">
-                            2900 руб.
+                                22500 руб.
                             </div>
-                            <a class="btn" href="#">Новая цена</a>
+                            <a class="btn" href="#">15500 р.</a>
+                        </div>
+                        <div class="buy">
+                            <a class="btn-buy" href="#">Купить</a>
+                            <a class="btn-bookmark" href="#">В закладки</a>
                         </div>
                     </article>
                     <article class="item">
@@ -148,35 +117,47 @@
                             <img src="http://placehold.it/50x50" width="50" height="50" alt="Перфоратор 2">
                         </div>
                         <p>Перфоратор 2</p>
-                        <div class="buy">
+                        <div class="price">
                             <div class="old-price">
-                            2900 руб.
+                                25500 руб.
                             </div>
-                            <a class="btn" href="#">Новая цена</a>
+                            <a class="btn" href="#">25500 р.</a>
+                        </div>
+                        <div class="buy">
+                            <a class="btn-buy" href="#">Купить</a>
+                            <a class="btn-bookmark" href="#">В закладки</a>
                         </div>
                     </article>
-                    <article class="item">
+                    <article class="item item-new">
                         <div class="item-photo">
                             <img src="http://placehold.it/50x50" width="50" height="50" alt="Перфоратор 3">
                         </div>
                         <p>Перфоратор 3</p>
-                        <div class="buy">
+                        <div class="price">
                             <div class="old-price">
-                            2900 руб.
+                                22500 руб.
                             </div>
-                            <a class="btn" href="#">Новая цена</a>
-                        </div>
+                                <a class="btn" href="#">12500 р.</a>
+                            </div>
+                            <div class="buy">
+                                <a class="btn-buy" href="#">Купить</a>
+                                <a class="btn-bookmark" href="#">В закладки</a>
+                            </div>
                     </article>
                     <article class="item">
                         <div class="item-photo">
                             <img src="http://placehold.it/50x50" width="50" height="50" alt="Перфоратор 4">
                         </div>
                         <p>Перфоратор 4</p>
-                        <div class="buy">
+                        <div class="price">
                             <div class="old-price">
-                            2900 руб.
+                            22500 руб.
                             </div>
-                            <a class="btn" href="#">Новая цена</a>
+                            <a class="btn" href="#">15500 р.</a>
+                        </div>
+                        <div class="buy">
+                            <a class="btn-buy" href="#">Купить</a>
+                            <a class="btn-bookmark" href="#">В закладки</a>
                         </div>
                     </article>
                     <article class="item">
@@ -184,11 +165,15 @@
                             <img src="http://placehold.it/50x50" width="50" height="50" alt="Перфоратор 5">
                         </div>
                         <p>Перфоратор 5</p>
-                        <div class="buy">
+                        <div class="price">
                             <div class="old-price">
-                            2900 руб.
+                            22500 руб.
                             </div>
-                            <a class="btn" href="#">Купить</a>
+                            <a class="btn" href="#">25500 р.</a>
+                        </div>
+                        <div class="buy">
+                            <a class="btn-buy" href="#">Купить</a>
+                            <a class="btn-bookmark" href="#">В закладки</a>
                         </div>
                     </article>
                     <article class="item">
@@ -196,14 +181,18 @@
                             <img src="http://placehold.it/50x50" width="50" height="50" alt="Перфоратор 6">
                         </div>
                         <p>Перфоратор 6</p>
-                        <div class="buy">
+                        <div class="price">
                             <div class="old-price">
-                            2900 руб.
+                            22500 руб.
                             </div>
-                            <a class="btn" href="#">Купить</a>
+                            <a class="btn" href="#">12500 р.</a>
+                        </div>
+                        <div class="buy">
+                            <a class="btn-buy" href="#">Купить</a>
+                            <a class="btn-bookmark" href="#">В закладки</a>
                         </div>
                     </article>
-                </figure>
+                </div>
                 <div class="pages">
                     <a>1</a>
                     <a>2</a>
