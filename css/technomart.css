@@ -1,0 +1,28 @@
+body{
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-style: normal;
+    color: #000000;
+    min-width: 962px;
+}
+h1{
+    font-family: "Cuprum", "Arial", sans-serif;
+    font-style: normal;
+    font-size: 30px;
+    color: #32425c;
+    line-height: 30px;
+}
+h4{ /* Заголовки в фильтре*/
+    font-family: "PTSans", "Arial", sans-serif;
+    font-style: bold;
+    font-size: 17pt;
+    color: #000000;
+    line-height: 30pt;
+}
+h5{ /*заголовки товаров */
+    font-family: "PTSans", "Arial", sans-serif;
+    font-style: bold;
+    font-size: 18pt;
+    color: #000000;
+    line-height: 20pt;
+    
+}
